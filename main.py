@@ -14,4 +14,5 @@ print(f"Total after tip: {total_with_tip}")
 # Each person should pay:
 person_amount = round(total_with_tip / int(num_people), 2) 
 
+# Print out the result:
 print(f"Each person should pay: ${person_amount}")
