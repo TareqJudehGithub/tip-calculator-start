@@ -8,11 +8,11 @@ tip = input("What percentage tip would you like to give? 10, 12, or 15? ")
 num_people = input("How many people to split the bill? ")
 
 # Total after tip:
-total_with_tip = float(total) + (float(total) * (int(tip) / 100))
-print(f"Total after tip: {total_with_tip}")
+total_bill = float(total) + (float(total) * (int(tip) / 100))
+print(f"Total after tip: {total_bill}")
 
 # Each person should pay:
-person_amount = round(total_with_tip / int(num_people), 2) 
+bill_person = round(total_bill / int(num_people), 2) 
 
 # Print out the result:
-print(f"Each person should pay: ${person_amount}")
+print(f"Each person should pay: ${bill_person}")
